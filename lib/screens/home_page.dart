@@ -69,7 +69,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 23,
-                                  color: colorNumber[i]),
+                                  color: colorNumber[numList[i]]),
                             ),
                           ),
                         ),
@@ -77,7 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             ? null
                             : () {
                                 setState(() {
-                                  if (number == colorNumber[i]) {
+                                  if (number == colorNumber[numList[i]]) {
                                     setState(() {
                                       context.read<CountCubit>().score += 1;
                                     });
